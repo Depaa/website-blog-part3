@@ -1,0 +1,7 @@
+{
+  "availability-zones:account={ACCOUNT_ID}:region={REGION}": [
+    "{REGION}a",
+    "{REGION}b",
+    "{REGION}c"
+  ]
+}
