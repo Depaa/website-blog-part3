@@ -1,0 +1,97 @@
+// POST PAGE
+.post-title {
+    font-size: 32px;
+}
+
+// EDIT POST PAGE
+.post-input-container {
+    margin-bottom: 1rem;
+    .caption {
+
+        color: var(--primary-color);
+    }
+    p {
+        font-size: 20px; 
+        @include for-tablet-portrait-up {
+            font-size: 18px; 
+        }
+        @include for-iphone-se {
+            font-size: 18px
+        }
+        @include for-iphone-se {
+            font-size: 18px
+        }
+    }
+    .post-title {
+        font-size: 32px;
+    }
+    .post-input {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #adadad;
+    }
+    .post-textarea {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #adadad;
+        background-color: transparent;
+    }
+    .post-tags {
+        margin: 5px 0 10px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        .tag {
+            border: 1px solid var(--primary-color)
+        }
+    }
+    .editor-wrapper > .ql-container > .ql-editor.ql-blank::before{
+        font-size: 20px;
+        color: #fff;
+    }
+}
+.post-upload-container {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    p {
+        color: var(--primary-color)
+    }
+}
+.post-header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .post-tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .tab {
+            background-color: transparent;
+            color: var(--text-color);
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 1rem;
+        }
+        .tab-active {
+            border-bottom: 1px solid var(--primary-color);
+        }
+    }
+    .post-publish-button {    
+        position: absolute;
+        right: 0;
+    }
+}
+
+.post-footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+

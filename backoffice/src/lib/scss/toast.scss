@@ -1,0 +1,25 @@
+.toast {
+    position: fixed;
+    width: 200px;
+    height: 75px;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast-success {
+    background-color: green;
+}
+
+.toast-error {
+    background-color: red;
+}
+
+.toast-warning {
+    background-color: orange;
+}

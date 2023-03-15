@@ -1,0 +1,30 @@
+button {
+	border-radius: 999px;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	font-weight: 600;
+	box-shadow: var(--button-shadow);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 10px 20px;
+	transition: all 0.4s ease;
+	width: auto;
+	background: var(--button-primary-background-color);
+	color: var(--button-primary-text-color);
+
+	&:hover {
+		box-shadow: var(--button-shadow-hover);
+		text-decoration: none;
+		filter: brightness(1.2);
+	}
+
+	&.secondary {
+		background: transparent;
+		color: #fff;
+		border: 2px solid var(--primary-color)
+	}
+}
