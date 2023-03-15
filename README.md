@@ -1,4 +1,4 @@
-Link to the article:
+Link to the article: https://depascalematteo.medium.com/building-static-backoffice-on-aws-with-sveltekit-11937a2d13c
 
 
 To release it follow these steps:
