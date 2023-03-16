@@ -10,7 +10,7 @@ interface AuthGuardType {
 	getToken: () => Promise<string>;
 }
 
-export const isLogged = writable<boolean>(await authGuard().initIsLogged());
+export let isLogged = writable<boolean>(false);
 
 export function getIsLogged() {
 	let val;
@@ -32,8 +32,10 @@ export function authGuard(): AuthGuardType {
 	const initIsLogged = async () => {
 		try {
 			await Auth.currentSession();
+			isLogged.update((state) => (true));
 			return true;
 		} catch (e) {
+			isLogged.update((state) => (false));
 			return false;
 		}
 	};
